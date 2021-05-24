@@ -44,7 +44,7 @@ var main = {
         var id = $('#id').val();
 
         $.ajax({
-            type: 'PUT',
+            type: 'PUT', //PostsApiController에 있는 API에서 이미 @PutMapping으로 선언했기 때문에 PUT 사용
             url: '/api/v1/posts/'+id,
             dataType: 'json',
             contentType:'application/json; charset=utf-8',
