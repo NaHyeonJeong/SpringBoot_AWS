@@ -29,6 +29,9 @@ dependencies {
 	//인메모리 관계형 데이터베이스
 	runtimeOnly 'com.h2database:h2'
 
+	//jdbc 의존성
+	implementation 'org.springframework.session:spring-session-jdbc'
+
 	//mustache 의존성 등록
 	implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
